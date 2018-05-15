@@ -1,40 +1,56 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-  margin-top: 9rem;
-  margin-bottom: 3rem;
+  padding-top: 3.5rem;
   color: #999;
-  background-color: #000;
+  background-color: #001010;
+  /* line-height: 2.0; */
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+hr {
+  border-color: #014c4d;
 }
-.marketing h2 {
-  font-weight: 400;
+
+.jumbotron {
+  background-color: #222;
+  border-radius: 0;
 }
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+
+.jumbotron .btn {
+  background-color: #013334;
+  color: #999;
+}
+.jumbotron .btn:hover {
+  background-color: #014c4d;
+}
+
+.info {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 2rem 0 1rem 0;
+}
+
+/* Navigation
+------------------------- */
+img.logo {
+  height: 70px;
+}
+
+.bg-dark {
+  background-color: #013334 !important;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  padding: 0;
 }
 
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  border-top: 1px solid rgba(255,255,255,.9);
-}
-
-/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -45,24 +61,85 @@ body {
   margin-bottom: 0px;
 }
 
+.cities-in-dust {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.cities-new {
+  background-color: #222;
+}
 
 /* Lightbox
 ------------------------- */
 .zoom {
   overflow: hidden;
   position: relative;
-  border: 5px solid rgba(255,255,255,.9);
+  border: 5px solid #999;
 }
 .img-zoom {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 a img.img-zoom:hover {
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+
+/* Callout
+------------------------- */
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #222;
+  border-left-width: .25rem;
+  border-radius: .25rem
+}
+
+.bd-callout h4 {
+  margin-top: 0;
+  margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0
+}
+
+.bd-callout code {
+  border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -.25rem
+}
+
+.bd-callout-info {
+  border-left-color: #029799
+}
+
+.bd-callout-info h4 {
+  color: #029799
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e
+}
+
+.bd-callout-warning h4 {
+    color: #f0ad4e
+}
+
+.bd-callout-danger {
+    border-left-color: #d9534f
+}
+
+.bd-callout-danger h4 {
+    color: #d9534f
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
