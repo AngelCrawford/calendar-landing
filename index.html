@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Events, Partys und Konzerte der schwarzen Gothic- und Rockmusikszene in Schleswig-Holstein und Hamburg - Alles in einem einzigen Kalender zusammengefasst.">
   <meta name="author" content="Angel Crawford">
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon32x32.png" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon32x32.png" /> -->
 
-  <title>Cities in Dust - Offline</title>
+  <title> ❌ Cities in Dust - Offline</title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <!-- Custom styles for this template -->
@@ -15,84 +15,99 @@
   <link rel="stylesheet" href="css/featherlight.css"/>
 
 </head>
-<body>
+<body data-spy="scroll" data-offset="5" data-target="#navbar">
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo_mobile.jpg" alt="Logo" /></a>
-      <span class="navbar-text"><strong>ist Offline!</strong> Diese Website wird nicht mehr weiter betreut.</span>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link active" href="#home">Lebewohl</a>
+          <a class="nav-item nav-link" href="#langfassung">Warum? Langfassung</a>
+          <a class="nav-item nav-link" href="#kurzfassung">Warum? Kurzfassung</a>
+
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
 
-    <div class="jumbotron">
+    <div class="cities-in-dust dark">
       <div class="container">
+        <div id="home" class="scrollspy">
+          <h1 class="display-3">Lebewohl.</h1>
+          <h2>Goodbye. Au revoir...</h2>
+          <p>Es war schön mit euch! Danke für eure Unterstützung und für die Treue. Doch <span class="info" data-toggle="popover" data-html="true" title="Cities in Dust" data-content="Events, Partys und Konzerte der schwarzen Gothic- und Rockmusikszene in Schleswig-Holstein und Hamburg.<br />Alles in einem einzigen Kalender zusammengefasst">Cities in Dust</span> geht offline.<br /></p>
+          <p>Um euch aber nicht einfach so im Regen stehen zu lassen, folgen noch Gründe über das "Warum, Wieso, Weshalb".</p>
+        </div>
 
-        <h1 class="display-3">Lebewohl.</h1>
-        <h2>Goodbye. Au revoir...</h2>
-        <p>Es war schön mit euch! Danke für eure Unterstützung und für die Treue. Doch <span class="info" data-toggle="tooltip" data-html="true" title="<strong>Cities in Dust</strong><br />Events, Partys und Konzerte der schwarzen Gothic- und Rockmusikszene in Schleswig-Holstein und Hamburg - Alles in einem einzigen Kalender zusammengefasst">Cities in Dust</span> geht offline.<br /></p>
-        <p>Um euch aber nicht einfach so im Regen stehen zu lassen, folgen noch Gründe über das "Warum, Wieso, Weshalb".</p>
+        <div id="langfassung" class="scrollspy">
+          <h3>Lange Fassung</h3>
+          <p>Für alle, die es nur kurz überfliegen wollen, gibt es weiter unten eine Kurzfassung.</p>
+
+          <div class="bd-callout bd-callout-info">
+            <h4>1. Lern Projekt. <span class="text-muted">Cities in Dust 1.0</span></h4>
+            <p>
+              Cities in Dust war ursprünglich als ein Lernprojekt gedacht. Allerdings hätte ich damals niemals damit gerechnet, dass es wie eine Bombe bei den Leuten einschlägt. Die Resonanz war eindeutig überwältigend.<br />
+              Doch es blieb ein Lernprojekt. Und dann geschah es. Mein Lernprojekt war programmiertechnisch zu einem Alptraum geworden!<br />
+              <ul>
+                <li><strong>Updaten:</strong> Unmöglich. Cities in Dust wurde mit Ruby on Rails geschrieben. Die große Hilfe bei einem fertigen Framework ist eigentlich seine ständige Erweiterbarkeit. Doch wenn man von Grund auf schon Scheiße gebaut hat, hilft einem auch das beste Framework der Welt nicht mehr weiter. Nun, es wäre Möglich... aber ich würde mehr Zeit in das "Fehler beheben" stecken, als in mein Leben.</li>
+                <li><strong>Anpassen:</strong> Unmöglich. Denn ich habe leider keine Ahnung mehr, was ich damals alles verzapft habe. Mit viel Liebe wäre es Möglich alles wieder zu rekonstruieren, aber dabei bekomme ich eindeutig Kopfschmerzen, weil ich keine Ahnung habe, wie um alles in der Welt ich damals auf solch Schwachsinnige Ideen gekommen bin.</li>
+                <li><strong>Verbessern:</strong> Die Seite braucht eindeutig zu lange zum Laden und an Mobile habe ich erst gar nicht gedacht.</li>
+              </ul>
+            </p>
+            <p>
+              Einfach neu anfangen. Und dieses Mal richtig. Doch hier kommt Punkt zwei.
+            </p>
+          </div>
+          <div class="bd-callout bd-callout-warning">
+            <h4>2. Der Neuanfang. <span class="text-muted">Cities in Dust 2.0</span></h4>
+            <p>
+              Mittlerweile habe ich Erfahrung im Programmieren, Gestalten, etc. von Websites.
+            </p>
+          </div>
+          <div class="bd-callout bd-callout-danger">
+            <h4>3. EU-DSGVO</h4>
+            <p>
+            </p>
+          </div>
+        </div>
         <hr />
-        <h3>Lange Fassung</h3>
-        <p>Für alle, die es nur kurz überfliegen wollen, gibt es weiter unten eine Kurzfassung.</p>
 
-        <div class="bd-callout bd-callout-info">
-          <h4>1. Lern Projekt. <span class="text-muted">Cities in Dust 1.0</span></h4>
-          <p>
-            Cities in Dust war ursprünglich als ein Lernprojekt gedacht. Allerdings hätte ich damals niemals damit gerechnet, dass es wie eine Bombe bei den Leuten einschlägt. Die Resonanz war eindeutig überwältigend.<br />
-            Doch es blieb ein Lernprojekt. Und dann geschah es. Mein Lernprojekt war programmiertechnisch zu einem Alptraum geworden!<br />
-            <ul>
-              <li><strong>Updaten:</strong> Unmöglich. Cities in Dust wurde mit Ruby on Rails geschrieben. Die große Hilfe bei einem fertigen Framework ist eigentlich seine ständige Erweiterbarkeit. Doch wenn man von Grund auf schon Scheiße gebaut hat, hilft einem auch das beste Framework der Welt nicht mehr weiter. Nun, es wäre Möglich... aber ich würde mehr Zeit in das "Fehler beheben" stecken, als in mein Leben.</li>
-              <li><strong>Anpassen:</strong> Unmöglich. Denn ich habe leider keine Ahnung mehr, was ich damals alles verzapft habe. Mit viel Liebe wäre es Möglich alles wieder zu rekonstruieren, aber dabei bekomme ich eindeutig Kopfschmerzen, weil ich keine Ahnung habe, wie um alles in der Welt ich damals auf solch Schwachsinnige Ideen gekommen bin.</li>
-              <li><strong>Verbessern:</strong> Die Seite braucht eindeutig zu lange zum Laden und an Mobile habe ich erst gar nicht gedacht.</li>
-            </ul>
-          </p>
-          <p>
-            Einfach neu anfangen. Und dieses Mal richtig. Doch hier kommt Punkt zwei.
-          </p>
+        <div id="kurzfassung" class="scrollspy">
+          <h3>Kurzfassung</h3>
+          <ol>
+            <li>
+              <strong>Lern Projekt: </strong>
+              <ul>
+                <li>Programmiertechnischer Alptraum</li>
+                <li>Somit keine Updates mehr Möglich</li>
+                <li>Zu Zeitintensiv alles zu Überarbeiten</li>
+                <li>Zum Haare raufen eben</li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <strong>EU-DSGVO: </strong>
+              <ul>
+                <li>NEIN.</li>
+                <li></li>
+              </ul>
+            </li>
+          </ol>
         </div>
-        <div class="bd-callout bd-callout-warning">
-          <h4>2. Der Neuanfang. <span class="text-muted">Cities in Dust 2.0</span></h4>
-          <p>
-             Mittlerweile habe ich Erfahrung im Programmieren, Gestalten, etc. von Websites.
-          </p>
-        </div>
-        <div class="bd-callout bd-callout-danger">
-          <h4>3. EU-DSGVO</h4>
-          <p>
-          </p>
-        </div>
-        <hr />
-        <h3>Kurzfassung</h3>
-        <ol>
-          <li>
-            <strong>Lern Projekt: </strong>
-            <ul>
-              <li>Programmiertechnischer Alptraum</li>
-              <li>Somit keine Updates mehr Möglich</li>
-              <li>Zu Zeitintensiv alles zu Überarbeiten</li>
-              <li>Zum Haare raufen eben</li>
-            </ul>
-          </li>
-          <br />
-          <li>
-            <strong>EU-DSGVO: </strong>
-            <ul>
-              <li>NEIN.</li>
-              <li></li>
-            </ul>
-          </li>
-        </ol>
 
-
-
-        <p><a class="btn btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-
-      </div>
+      </div> <!-- /container -->
     </div>
 
-    <div class="cities-in-dust cities-old">
+    <div class="cities-in-dust darker">
       <div class="container">
 
         <!-- START THE FEATURETTES -->
@@ -115,7 +130,7 @@
 
       </div><!-- /.container -->
     </div>
-    <div class="cities-in-dust cities-new">
+    <div class="cities-in-dust dark">
       <div class="container">
 
         <div class="row featurette">
@@ -139,12 +154,18 @@
       </div><!-- /.container -->
     </div>
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+
+
+
+
+
   </main>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->

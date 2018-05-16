@@ -4,24 +4,17 @@ body {
   padding-top: 3.5rem;
   color: #999;
   background-color: #001010;
+  /* background-color: #fff; */
   /* line-height: 2.0; */
 }
 
+.scrollspy {
+  padding-top: 5rem;
+}
+
+
 hr {
-  border-color: #014c4d;
-}
-
-.jumbotron {
-  background-color: #222;
-  border-radius: 0;
-}
-
-.jumbotron .btn {
-  background-color: #013334;
-  color: #999;
-}
-.jumbotron .btn:hover {
-  background-color: #014c4d;
+  border-bottom: 1px solid #014c4d;
 }
 
 .info {
@@ -48,6 +41,37 @@ img.logo {
   padding: 0;
 }
 
+.navbar-toggler {
+  padding-right: 1rem !important;
+}
+
+@media (max-width: 767.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 70px; /* Height of navbar */
+    bottom: 0;
+    width: 110%;
+    padding-left: 2.2rem;
+    overflow-y: auto;
+    background-color: #013334;
+    border-top: 1px solid #014c4d;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .offcanvas-collapse.open {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); /* Account for horizontal padding on navbar */
+  }
+}
+
+.nav-list {
+  position: static;
+  margin-top: 100px;
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -66,7 +90,10 @@ img.logo {
   padding-bottom: 4rem;
 }
 
-.cities-new {
+.cities-in-dust.darker {
+  background-color: #001010;
+}
+.cities-in-dust.dark {
   background-color: #222;
 }
 
