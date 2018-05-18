@@ -8,13 +8,36 @@ body {
   /* line-height: 2.0; */
 }
 
+h1, h2 {
+  color: #03a4a7;
+}
+h2, h3 {
+  padding: 2rem 0;
+}
+h4 {
+  padding-top: 1.5rem;
+}
+
+ul {
+  padding-bottom: 1.5rem;
+}
+
+a, a:visited {
+  color: #03a4a7;
+}
+a:hover, span.active {
+  color: #669394;
+  text-decoration: underline;
+}
+
 .scrollspy {
   padding-top: 5rem;
 }
 
-
 hr {
   border-bottom: 1px solid #014c4d;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
 }
 
 .info {
@@ -80,7 +103,13 @@ img.logo {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
+.figure {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .figure-img {
   margin-bottom: 0px;
 }
@@ -91,7 +120,7 @@ img.logo {
 }
 
 .cities-in-dust.darker {
-  background-color: #001010;
+  background-color: #1b1b1b;
 }
 .cities-in-dust.dark {
   background-color: #222;
