@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/featherlight.css"/>
 
 </head>
-<body data-spy="scroll" data-offset="5" data-target="#navbar">
+<body data-spy="scroll" data-offset="10" data-target="#navbar">
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
@@ -29,7 +29,8 @@
           <a class="nav-item nav-link active" href="#home">Lebewohl</a>
           <a class="nav-item nav-link" href="#langfassung">Warum? Langfassung</a>
           <a class="nav-item nav-link" href="#kurzfassung">Warum? Kurzfassung</a>
-
+          <a class="nav-item nav-link" href="#cideins">Cities in Dust 1.0</a>
+          <a class="nav-item nav-link" href="#cidzwei">Cities in Dust 2.0</a>
           <a class="nav-item nav-link disabled" href="#">Disabled</a>
 
         </div>
@@ -39,75 +40,96 @@
 
   <main>
 
-    <div class="cities-in-dust dark">
+    <div class="cities-in-dust dark scrollspy" id="home">
       <div class="container">
-        <div id="home" class="scrollspy">
-          <h1 class="display-3">Lebewohl.</h1>
-          <h2>Goodbye. Au revoir...</h2>
-          <p>Es war schön mit euch! Danke für eure Unterstützung und für die Treue. Doch <span class="info" data-toggle="popover" data-html="true" title="Cities in Dust" data-content="Events, Partys und Konzerte der schwarzen Gothic- und Rockmusikszene in Schleswig-Holstein und Hamburg.<br />Alles in einem einzigen Kalender zusammengefasst">Cities in Dust</span> geht offline.<br /></p>
-          <p>Um euch aber nicht einfach so im Regen stehen zu lassen, folgen noch Gründe über das "Warum, Wieso, Weshalb".</p>
-        </div>
 
-        <div id="langfassung" class="scrollspy">
-          <h3>Lange Fassung</h3>
-          <p>Für alle, die es nur kurz überfliegen wollen, gibt es weiter unten eine Kurzfassung.</p>
-
-          <div class="bd-callout bd-callout-info">
-            <h4>1. Lern Projekt. <span class="text-muted">Cities in Dust 1.0</span></h4>
-            <p>
-              Cities in Dust war ursprünglich als ein Lernprojekt gedacht. Allerdings hätte ich damals niemals damit gerechnet, dass es wie eine Bombe bei den Leuten einschlägt. Die Resonanz war eindeutig überwältigend.<br />
-              Doch es blieb ein Lernprojekt. Und dann geschah es. Mein Lernprojekt war programmiertechnisch zu einem Alptraum geworden!<br />
-              <ul>
-                <li><strong>Updaten:</strong> Unmöglich. Cities in Dust wurde mit Ruby on Rails geschrieben. Die große Hilfe bei einem fertigen Framework ist eigentlich seine ständige Erweiterbarkeit. Doch wenn man von Grund auf schon Scheiße gebaut hat, hilft einem auch das beste Framework der Welt nicht mehr weiter. Nun, es wäre Möglich... aber ich würde mehr Zeit in das "Fehler beheben" stecken, als in mein Leben.</li>
-                <li><strong>Anpassen:</strong> Unmöglich. Denn ich habe leider keine Ahnung mehr, was ich damals alles verzapft habe. Mit viel Liebe wäre es Möglich alles wieder zu rekonstruieren, aber dabei bekomme ich eindeutig Kopfschmerzen, weil ich keine Ahnung habe, wie um alles in der Welt ich damals auf solch Schwachsinnige Ideen gekommen bin.</li>
-                <li><strong>Verbessern:</strong> Die Seite braucht eindeutig zu lange zum Laden und an Mobile habe ich erst gar nicht gedacht.</li>
-              </ul>
-            </p>
-            <p>
-              Einfach neu anfangen. Und dieses Mal richtig. Doch hier kommt Punkt zwei.
-            </p>
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Lebewohl. <span class="text-muted">Goodbye. Au revoir...</span></h2>
+            <p class="lead">Es war schön mit euch! Danke für eure Unterstützung und für die Treue. Doch <span class="info" data-toggle="popover" data-html="true" title="Cities in Dust" data-content="Events, Partys und Konzerte der schwarzen Gothic- und Rockmusikszene in Schleswig-Holstein und Hamburg.<br />Alles in einem einzigen Kalender zusammengefasst">Cities in Dust</span> geht offline.</p>
+            <p>Um euch aber nicht einfach so im Regen stehen zu lassen, folgen noch Gründe über das "Warum, Wieso, Weshalb".</p>
           </div>
-          <div class="bd-callout bd-callout-warning">
-            <h4>2. Der Neuanfang. <span class="text-muted">Cities in Dust 2.0</span></h4>
-            <p>
-              Mittlerweile habe ich Erfahrung im Programmieren, Gestalten, etc. von Websites.
-            </p>
-          </div>
-          <div class="bd-callout bd-callout-danger">
-            <h4>3. EU-DSGVO</h4>
-            <p>
-            </p>
+          <div class="col-md-5 order-md-1">
+            <figure class="figure">
+              <img class="featurette-image figure-img img-fluid" src="img/screenshot_new.png" alt="Generic placeholder image">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
           </div>
         </div>
-        <hr />
 
-        <div id="kurzfassung" class="scrollspy">
-          <h3>Kurzfassung</h3>
-          <ol>
-            <li>
-              <strong>Lern Projekt: </strong>
-              <ul>
-                <li>Programmiertechnischer Alptraum</li>
-                <li>Somit keine Updates mehr Möglich</li>
-                <li>Zu Zeitintensiv alles zu Überarbeiten</li>
-                <li>Zum Haare raufen eben</li>
-              </ul>
-            </li>
-            <br />
-            <li>
-              <strong>EU-DSGVO: </strong>
-              <ul>
-                <li>NEIN.</li>
-                <li></li>
-              </ul>
-            </li>
-          </ol>
+
+      </div>
+    </div>
+
+
+    <div class="cities-in-dust darker scrollspy" id="langfassung">
+      <div class="container">
+
+
+        <h2>Langfassung</h2>
+        <p>Für alle, die es nur kurz überfliegen wollen, gibt es weiter unten eine Kurzfassung.</p>
+
+        <div class="bd-callout bd-callout-info">
+          <h3>1. Lern Projekt. <span class="text-muted">Cities in Dust 1.0</span></h3>
+          <p>
+            Cities in Dust war ursprünglich als ein Lernprojekt gedacht. Allerdings hätte ich damals niemals damit gerechnet, dass es wie eine Bombe bei den Leuten einschlägt. Die Resonanz war eindeutig überwältigend.<br />
+            Doch es blieb ein Lernprojekt. Und dann geschah es. Mein Lernprojekt war programmiertechnisch zu einem Alptraum geworden!<br />
+            <ul>
+              <li><strong>Updaten:</strong> Unmöglich. Cities in Dust wurde mit Ruby on Rails geschrieben. Die große Hilfe bei einem fertigen Framework ist eigentlich seine ständige Erweiterbarkeit. Doch wenn man von Grund auf schon Scheiße gebaut hat, hilft einem auch das beste Framework der Welt nicht mehr weiter. Nun, es wäre Möglich... aber ich würde mehr Zeit in das "Fehler beheben" stecken, als in mein Leben.</li>
+              <li><strong>Anpassen:</strong> Unmöglich. Denn ich habe leider keine Ahnung mehr, was ich damals alles verzapft habe. Mit viel Liebe wäre es Möglich alles wieder zu rekonstruieren, aber dabei bekomme ich eindeutig Kopfschmerzen, weil ich keine Ahnung habe, wie um alles in der Welt ich damals auf solch Schwachsinnige Ideen gekommen bin.</li>
+              <li><strong>Verbessern:</strong> Die Seite braucht eindeutig zu lange zum Laden und an Mobile habe ich erst gar nicht gedacht.</li>
+            </ul>
+          </p>
+          <p>
+            Einfach neu anfangen. Und dieses Mal richtig. Doch hier kommt Punkt zwei.
+          </p>
         </div>
+        <div class="bd-callout bd-callout-warning">
+          <h3>2. Der Neuanfang. <span class="text-muted">Cities in Dust 2.0</span></h3>
+          <p>
+            Mittlerweile habe ich Erfahrung im Programmieren, Gestalten, etc. von Websites.
+          </p>
+        </div>
+        <div class="bd-callout bd-callout-danger">
+          <h3>3. EU-DSGVO</h3>
+          <p>
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="cities-in-dust dark scrollspy" id="kurzfassung">
+      <div class="container">
+
+
+        <h2>Kurzfassung</h2>
+        <ol>
+          <li>
+            <strong>Lern Projekt: </strong>
+            <ul>
+              <li>Programmiertechnischer Alptraum</li>
+              <li>Somit keine Updates mehr Möglich</li>
+              <li>Zu Zeitintensiv alles zu Überarbeiten</li>
+              <li>Zum Haare raufen eben</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <strong>EU-DSGVO: </strong>
+            <ul>
+              <li>NEIN.</li>
+              <li></li>
+            </ul>
+          </li>
+        </ol>
 
       </div> <!-- /container -->
     </div>
 
-    <div class="cities-in-dust darker">
+    <div class="cities-in-dust darker scrollspy" id="cideins">
       <div class="container">
 
         <!-- START THE FEATURETTES -->
@@ -130,7 +152,8 @@
 
       </div><!-- /.container -->
     </div>
-    <div class="cities-in-dust dark">
+
+    <div class="cities-in-dust dark scrollspy" id="cidzwei">
       <div class="container">
 
         <div class="row featurette">
